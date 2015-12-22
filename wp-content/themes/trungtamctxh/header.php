@@ -11,8 +11,19 @@
 </head>
  
 <body <?php body_class(); ?> > <!--Thêm class tượng trưng cho mỗi trang lên <body> để tùy biến-->
-        <div id="container" class="container">
+        <div id="container" >
         	<header id="header">
-			        <?php cswd_logo(); ?>
+        		<div class="container">
+        			<?php //cswd_logo(); ?>
+        			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        				<a href="/">
+        					<img src="wp-content/uploads/2015/12/LOGO-CHU-NEW.png" class="img-responsive" alt="Trung tâm phát triển công tác xã hội trường đại học thủ dầu một">
+        				</a>
+        			</div>
+        			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 anhbannerphu">
+        				<img src="wp-content/uploads/2015/12/anhbaner-TOCHUC.png" class="img-responsive" alt="Trung tâm phát triển công tác xã hội trường đại học thủ dầu một">
+        			</div>
+        		</div>
+			        
 			        <?php cswd_menu( 'primary-menu' ); ?>
 			</header>

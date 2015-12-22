@@ -9,7 +9,17 @@
  * Textdomain: cswd
  */
 
- .logo img{
+ /*.logo img{
  	width: 100%;
  	height: auto;
+ }*/
+
+ #header{
+ 	background-color: #0A8CD7;
+ }
+
+ @media (max-width: 767px) { 
+ 	.anhbannerphu{
+ 		display: none !important;
+ 	}
  }
