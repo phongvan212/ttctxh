@@ -91,36 +91,50 @@
         }
         add_action ( 'init', 'cswd_theme_setup' );
   }
-	/**
-	@ Thiết lập hàm hiển thị logo
-	@ thachpham_logo()
-	**/
-	if ( ! function_exists( 'cswd_logo' ) ) {
-	  function cswd_logo() {?>
-	    <div class="logo">
-	 
-	      <div class="site-name">
-	        <?php if ( is_home() ) {
-	          printf(
-	            '<h1><a href="%1$s" title="%2$s">%3$s</a></h1>',
-	            get_bloginfo( 'url' ),
-	            get_bloginfo( 'description' ),
-	            get_bloginfo( 'sitename' )
-	          );
-	        } else {
-	          printf(
-	            '<p><a href="%1$s" title="%2$s">%3$s</a></p>',
-	            get_bloginfo( 'url' ),
-	            get_bloginfo( 'description' ),
-	            get_bloginfo( 'sitename' )
-	          );
-	        } // endif ?>
-	      </div>
-	      <div class="site-description"><?php bloginfo( 'description' ); ?></div>
-	 
-	    </div>
-	  <?php }
-	}
+		/**
+		@ Thiết lập hàm hiển thị logo
+		@ thachpham_logo()
+		**/
+		if ( ! function_exists( 'cswd_logo' ) ) {
+		  function cswd_logo() {?>
+		    <?php
+		      global $ttptctxh_options;
+		    ?>
+		 
+		    <?php if ( $ttptctxh_options['logo-on'] == 1 ) : ?>
+		 
+		      <div class="logo">
+		        <img src="<?php echo $ttptctxh_options['logo-image']['url']; ?>">
+		      </div>
+		 
+		    <?php else : ?>
+		 
+		      <div class="logo">
+		 
+		        <div class="site-name">
+		          <?php if ( is_home() ) {
+		            printf(
+		              '<h1><a href="%1$s" title="%2$s">%3$s</a></h1>',
+		              get_bloginfo( 'url' ),
+		              get_bloginfo( 'description' ),
+		              get_bloginfo( 'sitename' )
+		            );
+		          } else {
+		            printf(
+		              '<a href="%1$s" title="%2$s">%3$s</a>',
+		              get_bloginfo( 'url' ),
+		              get_bloginfo( 'description' ),
+		              get_bloginfo( 'sitename' )
+		            );
+		          } // endif ?>
+		        </div>
+		        <div class="site-description"><?php bloginfo( 'description' ); ?></div>
+		 
+		      </div>
+		 
+		      <?php endif;
+		  }
+		}
 
 	/**
 	@ Thiết lập hàm hiển thị menu
@@ -302,6 +316,9 @@
 
 	  wp_register_style('bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css', 'all');
       wp_enqueue_style('bootstrap-style');
+
+		wp_register_script('jQuery', get_template_directory_uri() . '/js/jquery-2.1.4.min.js', array(), false, true);
+    	wp_enqueue_script('jQuery');
 
         wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), false, true);
     	wp_enqueue_script('bootstrap');

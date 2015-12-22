@@ -11,7 +11,7 @@
 </head>
  
 <body <?php body_class(); ?> > <!--Thêm class tượng trưng cho mỗi trang lên <body> để tùy biến-->
-        <div id="container">
+        <div id="container" class="container">
         	<header id="header">
 			        <?php cswd_logo(); ?>
 			        <?php cswd_menu( 'primary-menu' ); ?>
