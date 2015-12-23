@@ -23,3 +23,18 @@
  		display: none !important;
  	}
  }
+
+ /*
+ style footer 
+ */
+ #footer{
+ 	background-color: #222222;
+ 	margin-top: 30px;
+ }
+ #footer .copyright{
+ 	/*height: 200px;*/
+ 	padding-top: 30px;
+ 	padding-bottom: 50px;
+ 	color: #ffffff;
+ }
+#footer .fixed {position:fixed; bottom:0px;}

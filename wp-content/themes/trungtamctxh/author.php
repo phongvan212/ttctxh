@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="content">
+<div class="container">
  		<div class="author-box"><?php
 		        // Hiển thị avatar của tác giả
 		        echo '<div class="author-avatar">'. get_avatar( get_the_author_meta( 'ID' ) ) . '</div>';
@@ -15,7 +15,7 @@
 		                get_the_author_meta( 'user_url' ), get_the_author() );
 		        endif;
 		?></div>
-        <section id="main-content">
+        <section id="main-content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
  			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php get_template_part( 'content', get_post_format() ); ?>
 	        <?php endwhile; ?>
@@ -24,7 +24,7 @@
 	                <?php get_template_part( 'content', 'none' ); ?>
 	        <?php endif; ?>
         </section>
-        <section id="sidebar">
+        <section id="sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
  			<?php get_sidebar(); ?>
         </section>
  

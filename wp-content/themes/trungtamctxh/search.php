@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="content">
+<div class="container">
  		<div class="search-info">
         <!--Sử dụng query để hiển thị số kết quả tìm kiếm được tìm thấy
                 Cũng như hiển thị từ khóa tìm kiếm. Từ khóa tìm kiếm cũng
@@ -12,7 +12,7 @@
                 printf( __('Search results for <strong>%1$s</strong>. We found <strong>%2$s</strong> articles for you.', 'cswd'), $search_keyword, $search_count );
         ?>
 		</div>
-        <section id="main-content">
+        <section id="main-content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
  			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php get_template_part( 'content', get_post_format() ); ?>
 	        <?php endwhile; ?>
@@ -21,7 +21,7 @@
 	                <?php get_template_part( 'content', 'none' ); ?>
 	        <?php endif; ?>
         </section>
-        <section id="sidebar">
+        <section id="sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
  			<?php get_sidebar(); ?>
         </section>
  
