@@ -1,8 +1,8 @@
 <?php get_header(); ?>
  
-<div id="content">
+<div id="container">
  
-        <section id="main-content">
+        <section id="main-content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 		 <?php
 		        _e('<h2>404 NOT FOUND</h2>', 'cswd');
 		        _e('<p>The article you were looking for was not found, but maybe try looking again!</p>', 'cswd');
@@ -18,7 +18,7 @@
 		        wp_tag_cloud();
 		?>
         </section>
-        <section id="sidebar">
+        <section id="sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <?php get_sidebar(); ?>
         </section>
  
