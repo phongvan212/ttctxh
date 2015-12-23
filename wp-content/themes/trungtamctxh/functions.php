@@ -325,4 +325,38 @@
 
 	}
 	add_action( 'wp_enqueue_scripts', 'cswd_styles' );
+
+	/** 
+	Short-code lay 10 tin moi
+	**/
+	if(!function_exists('top_news')){
+		function top_news(){
+		query_posts('showposts=10');
+		if (have_posts()):
+			echo "<div class=''row'><h3>TIN TỨC MỚI</h3>";
+		while (have_posts()) : the_post(); ?>
+			<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+		<?php endwhile;
+		echo "</div>";
+		endif;
+		}
+	}
+	add_shortcode('sc_top_news', 'top_news');
+
+	/** 
+	Short-code lay Tin Tu Sach
+	**/
+	if(!function_exists('top_tu_sach')){
+		function top_tu_sach(){
+		query_posts('cat=32&showposts=10');
+		if (have_posts()):
+			echo "<div class='row'><h3>TỦ SÁCH</h3>";
+		while (have_posts()) : the_post(); ?>
+			<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+		<?php endwhile;
+			echo "</div>";
+		endif;
+		}
+	}
+	add_shortcode('sc_top_tu_sach', 'top_tu_sach');
 ?>

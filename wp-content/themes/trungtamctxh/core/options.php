@@ -81,8 +81,9 @@
 			            'display_name' => $theme->get( 'Name' ), // Thiết lập tên theme hiển thị trong Theme Options
 			            'menu_type'          => 'menu',
 			        'allow_sub_menu'     => true,
-			        'menu_title'         => __( 'TTPTCTXH Theme Options', 'thachpham' ),
-			        'page_title'         => __( 'TTPTCTXH Theme Options', 'thachpham' ),
+			        'menu_title'         => __( 'TTPTCTXH Theme Options', 'cswd' ),
+			        'page_title'         => __( 'TTPTCTXH Theme Options', 'cswd' ),
+			        'google_api_key'     => 'AIzaSyAs0iVWrG4E_1bG244-z4HRKJSkg7JVrVQ',
 			        'dev_mode' => false,
 			        'customizer' => true,
 			        'menu_icon' => '', // Đường dẫn icon của menu option
