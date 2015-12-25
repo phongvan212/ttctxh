@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php die(); ?><!DOCTYPE html>
 <!--[if IE 8]> <html lang="en-US" class="ie8"> <![endif]-->
 <!--[if !IE]> <html lang="en-US"> <![endif]-->
  
@@ -28,26 +28,37 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
+<link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://ttctxh.com/wp-includes/css/dashicons.min.css?ver=4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='http://ttctxh.com/wp-includes/css/admin-bar.min.css?ver=4.4' type='text/css' media='all' />
 <link rel='stylesheet' id='main-style-css'  href='http://ttctxh.com/wp-content/themes/trungtamctxh/style.css?ver=4.4' type='text/css' media='all' />
 <link rel='stylesheet' id='bootstrap-style-css'  href='http://ttctxh.com/wp-content/themes/trungtamctxh/css/bootstrap.min.css?ver=4.4' type='text/css' media='all' />
-<link rel='stylesheet' id='my-bootstrap-menu-custom-styles-css'  href='http://ttctxh.com/wp-content/plugins/my-bootstrap-menu/inc/css/bootstrap.custom.css?ver=6161' type='text/css' media='all' />
-<link rel='stylesheet' id='my-bootstrap-submenu-styles-css'  href='http://ttctxh.com/wp-content/plugins/my-bootstrap-menu/inc/css/bootstrap.submenu.css?ver=507' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='http://ttctxh.com/wp-includes/css/dashicons.min.css?ver=4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='my-bootstrap-menu-custom-styles-css'  href='http://ttctxh.com/wp-content/plugins/my-bootstrap-menu/inc/css/bootstrap.custom.css?ver=2794' type='text/css' media='all' />
+<link rel='stylesheet' id='my-bootstrap-submenu-styles-css'  href='http://ttctxh.com/wp-content/plugins/my-bootstrap-menu/inc/css/bootstrap.submenu.css?ver=9060' type='text/css' media='all' />
 <link rel='stylesheet' id='redux-google-fonts-ttptctxh_options-css'  href='http://fonts.googleapis.com/css?family=Helvetica+Neue%2C+Arial%2C+sans-serif&#038;ver=1450833598' type='text/css' media='all' />
 <script type='text/javascript' src='http://ttctxh.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
 <script type='text/javascript' src='http://ttctxh.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<script type='text/javascript' src='http://ttctxh.com/wp-content/plugins/my-bootstrap-menu/inc/js/bootstrap.custom.js?ver=893'></script>
+<script type='text/javascript' src='http://ttctxh.com/wp-content/plugins/my-bootstrap-menu/inc/js/bootstrap.custom.js?ver=6538'></script>
 <link rel='https://api.w.org/' href='http://ttctxh.com/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ttctxh.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ttctxh.com/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4" />
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
 <link rel="icon" href="http://ttctxh.com/wp-content/uploads/2015/12/cropped-logo-vuong-32x32.png" sizes="32x32" />
 <link rel="icon" href="http://ttctxh.com/wp-content/uploads/2015/12/cropped-logo-vuong-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="http://ttctxh.com/wp-content/uploads/2015/12/cropped-logo-vuong-180x180.png" />
 <meta name="msapplication-TileImage" content="http://ttctxh.com/wp-content/uploads/2015/12/cropped-logo-vuong-270x270.png" />
 <style type="text/css" title="dynamic-css" class="options-output">body{font-family:Helvetica Neue, Arial, sans-serif;line-height:14px;font-weight:normal;font-style:normal;font-size:14px;}</style></head>
  
-<body class="home blog" > <!--Thêm class tượng trưng cho mỗi trang lên <body> để tùy biến-->
+<body class="home blog logged-in admin-bar no-customize-support" > <!--Thêm class tượng trưng cho mỗi trang lên <body> để tùy biến-->
         <div id="container" >
         	<header id="header">
         		<div class="container">
@@ -128,11 +139,11 @@ img.emoji {
                 </nav> <!-- nav class --> 			</header><div class="container">
         
         <section id="main-content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-             		<div id="cptbc_498" class="carousel slide"  data-interval="4000">
+             		<div id="cptbc_78" class="carousel slide"  data-interval="4000">
 			
 							<ol class="carousel-indicators">
-									<li data-target="#cptbc_498" data-slide-to="0" class="active"></li>
-									<li data-target="#cptbc_498" data-slide-to="1" ></li>
+									<li data-target="#cptbc_78" data-slide-to="0" class="active"></li>
+									<li data-target="#cptbc_78" data-slide-to="1" ></li>
 								</ol>
 			
 			<div class="carousel-inner">
@@ -144,18 +155,18 @@ img.emoji {
 					<img width="1170" height="300" src="http://ttctxh.com/wp-content/uploads/2015/12/cong-nhan-cdio.jpg" class="attachment-full size-full wp-post-image" alt="cong-nhan-cdio" srcset="http://ttctxh.com/wp-content/uploads/2015/12/cong-nhan-cdio-300x77.jpg 300w, http://ttctxh.com/wp-content/uploads/2015/12/cong-nhan-cdio-768x197.jpg 768w, http://ttctxh.com/wp-content/uploads/2015/12/cong-nhan-cdio-1024x263.jpg 1024w, http://ttctxh.com/wp-content/uploads/2015/12/cong-nhan-cdio.jpg 1170w" sizes="(max-width: 1170px) 100vw, 1170px" /><div class="carousel-caption"><h4>ĐH Thủ Dầu Một chính thức gia nhập tổ chức CDIO thế giới</h4><p>Từ 01/8/2015, ĐH Thủ Dầu Một chính thức có tên trong danh sách các trường đào tạo theo mô hình CDIO của thế giới.</p></div>				</div>
 						</div>
 
-								<a class="left carousel-control" href="#cptbc_498" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-					<a class="right carousel-control" href="#cptbc_498" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+								<a class="left carousel-control" href="#cptbc_78" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+					<a class="right carousel-control" href="#cptbc_78" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 				
 		</div>
 
         		<script type="text/javascript">
 			jQuery(document).ready(function() {
-				jQuery('#cptbc_498').carousel({
+				jQuery('#cptbc_78').carousel({
 					interval: 4000				});
 			});
 		</script>
-         <<<<<<< HEAD
+         
             <div class=''row'><h3>TIN TỨC MỚI</h3>			<a href="http://ttctxh.com/archives/93"><h4>Thứ hai: D14XH02</h4></a>
 					<a href="http://ttctxh.com/archives/91"><h4>Thứ ba: D15XH01</h4></a>
 					<a href="http://ttctxh.com/archives/89"><h4>Thứ tư: C14XH01</h4></a>
@@ -166,11 +177,7 @@ img.emoji {
 					<a href="http://ttctxh.com/archives/74"><h4>28/11/2015 Tập huấn nhan đề Công Tác Xã Hội với người nhiễm HIV/AIDS</h4></a>
 					<a href="http://ttctxh.com/archives/71"><h4>01/12/2015 Ngày thế giới phòng chống HIV/AIDS trùng sinh nhật trưởng ban thông tin</h4></a>
 					<a href="http://ttctxh.com/archives/69"><h4>05/12/2015 Sinh nhật của tình nguyện viên Thanh Lam trùng với ngày Quốc tế Tình Nguyện</h4></a>
-		</div>   			  =======
-
- 				                <div class="no-post">
-        Nothing post found.</div>	                    
->>>>>>> 18ec0ea1acaf0566beb0be33ecb8cb7ec5abd848
+		</div>   			 [news_by_cat cat_id=1 take_num=5]  
         </section>
         <section id="sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
  			<style>
@@ -265,7 +272,8 @@ zoom: 1;
 		</li>
 <li id="text-4" class="widget widget_text"><a href="http://ttctxh.com/?cat=31"><h3 class="widgettitle">Tài liệu</h3></a>			<div class="textwidget"></div>
 		</li>
-        </section>
+        <li id="visits_counter_widget" class="widget vc_initWidget">            <h3 class="widgettitle">Thống kê truy cập</h3>            Đang truy cập: 0<br />Tất cả: 10        </li>
+            </section>
  
 </div>
 		<footer id="footer">
@@ -282,11 +290,55 @@ zoom: 1;
                 </div>
         </footer>
 </div> <!--end #container -->
- <script type='text/javascript' src='http://ttctxh.com/wp-content/themes/trungtamctxh/js/jquery-2.1.4.min.js?ver=4.4'></script>
+ <script type='text/javascript' src='http://ttctxh.com/wp-includes/js/admin-bar.min.js?ver=4.4'></script>
+<script type='text/javascript' src='http://ttctxh.com/wp-content/themes/trungtamctxh/js/jquery-2.1.4.min.js?ver=4.4'></script>
 <script type='text/javascript' src='http://ttctxh.com/wp-content/themes/trungtamctxh/js/bootstrap.min.js?ver=4.4'></script>
 <script type='text/javascript' src='http://ttctxh.com/wp-content/themes/trungtamctxh/js/script.js?ver=4.4'></script>
 <script type='text/javascript' src='http://ttctxh.com/wp-includes/js/wp-embed.min.js?ver=4.4'></script>
+	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
 
+			request = true;
+
+			b[c] = b[c].replace( rcs, ' ' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+			<div id="wpadminbar" class="nojq nojs">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://ttctxh.com/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about"><a class="ab-item"  href="http://ttctxh.com/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item"  href="https://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item"  href="https://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item"  href="https://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item"  href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://ttctxh.com/wp-admin/">Trung tâm phát triển Công tác xã hội Trư&hellip;</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-dashboard"><a class="ab-item"  href="http://ttctxh.com/wp-admin/">Dashboard</a>		</li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu">
+		<li id="wp-admin-bar-themes"><a class="ab-item"  href="http://ttctxh.com/wp-admin/themes.php">Themes</a>		</li>
+		<li id="wp-admin-bar-widgets"><a class="ab-item"  href="http://ttctxh.com/wp-admin/widgets.php">Widgets</a>		</li>
+		<li id="wp-admin-bar-menus"><a class="ab-item"  href="http://ttctxh.com/wp-admin/nav-menus.php">Menus</a>		</li>
+		<li id="wp-admin-bar-background" class="hide-if-customize"><a class="ab-item"  href="http://ttctxh.com/wp-admin/themes.php?page=custom-background">Background</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item"  href="http://ttctxh.com/wp-admin/customize.php?url=http%3A%2F%2Fttctxh.com%2F">Customize</a>		</li>
+		<li id="wp-admin-bar-comments"><a class="ab-item"  href="http://ttctxh.com/wp-admin/edit-comments.php" title="0 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://ttctxh.com/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post"><a class="ab-item"  href="http://ttctxh.com/wp-admin/post-new.php">Post</a>		</li>
+		<li id="wp-admin-bar-new-media"><a class="ab-item"  href="http://ttctxh.com/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-page"><a class="ab-item"  href="http://ttctxh.com/wp-admin/post-new.php?post_type=page">Page</a>		</li>
+		<li id="wp-admin-bar-new-cptbc"><a class="ab-item"  href="http://ttctxh.com/wp-admin/post-new.php?post_type=cptbc">Carousel Image</a>		</li>
+		<li id="wp-admin-bar-new-user"><a class="ab-item"  href="http://ttctxh.com/wp-admin/user-new.php">User</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-TrungtamCTXHTheme"><a class="ab-item"  href="http://ttctxh.com/wp-admin/admin.php?page=TrungtamCTXHTheme">TTPTCTXH Theme Options</a>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://ttctxh.com/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"/></form></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item"  aria-haspopup="true" href="http://ttctxh.com/wp-admin/profile.php">Howdy, bienvvd<img alt='' src='http://0.gravatar.com/avatar/35383db06a203859398879525ee4c151?s=26&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/35383db06a203859398879525ee4c151?s=52&amp;d=mm&amp;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' /></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://ttctxh.com/wp-admin/profile.php"><img alt='' src='http://0.gravatar.com/avatar/35383db06a203859398879525ee4c151?s=64&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/35383db06a203859398879525ee4c151?s=128&amp;d=mm&amp;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' /><span class='display-name'>bienvvd</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a class="ab-item"  href="http://ttctxh.com/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout"><a class="ab-item"  href="http://ttctxh.com/wp-login.php?action=logout&#038;_wpnonce=4b9a53bf13">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://ttctxh.com/wp-login.php?action=logout&#038;_wpnonce=4b9a53bf13">Log Out</a>
+					</div>
+
+		
 <script type="text/javascript">
 	$(document).ready(function () {
 		   var docHeight = $(window).height();
@@ -302,7 +354,5 @@ zoom: 1;
 
 </body> <!--end body-->
 </html> <!--end html -->
-<!-- Dynamic page generated in 5.931 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2015-12-23 16:59:12 -->
-
-<!-- super cache -->
+<!-- Dynamic page generated in 5.570 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2015-12-25 09:21:50 -->
