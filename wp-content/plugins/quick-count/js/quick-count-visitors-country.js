@@ -1,1 +1,0 @@
-var quick_count=jQuery.extend(quick_count||{},{visitors_country_map:function(){var a=jQuery("div.quick-count-visitors-map");quick_count.map(a,quick_count.cdata,60)}},quick_count_visitors_country||{});jQuery(document).ready(function(){1==quick_count.qfc&&quick_count.visitors_country_map()});
