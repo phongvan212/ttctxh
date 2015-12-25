@@ -335,7 +335,7 @@
 		function top_news(){
 		query_posts('showposts=10');
 		if (have_posts()):
-			echo "<div class=''row'><h3>TIN TỨC MỚI</h3>";
+			echo "<div><h3>TIN TỨC MỚI</h3>";
 		while (have_posts()) : the_post(); ?>
 			<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
 		<?php endwhile;
@@ -346,19 +346,29 @@
 	add_shortcode('sc_top_news', 'top_news');
 
 	/** 
-	Short-code lay Tin Tu Sach
+	Short-code lay Tin Theo Loai
 	**/
-	if(!function_exists('top_tu_sach')){
-		function top_tu_sach(){
-		query_posts('cat=32&showposts=10');
-		if (have_posts()):
-			echo "<div class='row'><h3>TỦ SÁCH</h3>";
-		while (have_posts()) : the_post(); ?>
-			<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
-		<?php endwhile;
-			echo "</div>";
-		endif;
+	if(!function_exists('news_by_cat')){
+		function news_by_cat($args, $content){
+		if(!is_null($args['cat_id']))
+		{
+			if(!is_null($args['take_num']))
+			{
+				query_posts('cat='.$args['cat_id'].'&showposts='.$args['take_num']);
+			}
+			else
+			{
+				query_posts('cat='.$args['cat_id']);
+			}
+			if (have_posts()):
+			echo "<div><h3>".get_cat_name( $args['cat_id'] )."</h3>";
+			while (have_posts()) : the_post(); ?>
+				<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+			<?php endwhile;
+				echo "</div>";
+			endif;
+			}
 		}
 	}
-	add_shortcode('sc_top_tu_sach', 'top_tu_sach');
+	add_shortcode('sc_news_by_cat', 'news_by_cat');
 ?>
