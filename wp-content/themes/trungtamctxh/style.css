@@ -38,3 +38,52 @@
  	color: #ffffff;
  }
 #footer .fixed {position:fixed; bottom:0px;}
+
+/*---:[SIDEBAR]:---*/
+#sidebar {
+        font-size: 0.9em;
+}
+#sidebar ul,
+#sidebar ol,
+#sidebar li {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+}
+h1,h2,h3,.h1,.h2,.h3 {
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+}
+.widget {
+	margin-bottom: 15px !important;
+}
+
+.rpwe_widget .widgettitle{
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    font-size: 16px;
+    text-align: center;
+}
+
+.rpwe-block .rpwe-title{
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+}
+ 
+.widget_text a{
+    color: white;
+    text-align: left;
+}
+
+.widget_text a h3{
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+a{
+    text-decoration: none !important;
+}
