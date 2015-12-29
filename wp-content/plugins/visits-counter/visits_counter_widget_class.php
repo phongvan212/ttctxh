@@ -45,13 +45,13 @@ class visits_counter_widget {
             $content = "<h3>".$this->title."</h3>";
 
         if ($this->displayOptions['displayCurrent'])
-            $content .= $this->onlineUsersLabel.": ".$this->count_values['online_users']."<br />";
+            $content .= "<span class='fa fa-users'></span> ".$this->onlineUsersLabel.": ".$this->count_values['online_users']."<br />";
         if ($this->displayOptions['displayDaily'])
-            $content .= $this->dailyUsersLabel.": ".$this->count_values['daily_counter']."<br />";
+            $content .= "<span class='fa fa-calendar-check-o'></span> ".$this->dailyUsersLabel.": ".$this->count_values['daily_counter']."<br />";
         if ($this->displayOptions['displayWeekly'])
-            $content .= $this->weeklyUsersLabel.": ".$this->count_values['weekly_counter']."<br />";
+            $content .= "<span class='fa fa-calendar'></span> ".$this->weeklyUsersLabel.": ".$this->count_values['weekly_counter']."<br />";
         if ($this->displayOptions['displayOverall'])
-            $content .= $this->overallUsersLabel.": ".$this->count_values['overall_counter']."<br />";
+            $content .= "<span class='fa fa-bar-chart'></span> ".$this->overallUsersLabel.": ".$this->count_values['overall_counter']."<br />";
         
         //cut last <br /> tag in $content:
         $content = substr($content, 0, -6);

@@ -236,7 +236,7 @@
 	          get_the_category_list( ', ' ) );
 	 
 	        // Hiển thị số đếm lượt bình luận
-	        if ( comments_open() ) :
+	        /**if ( comments_open() ) :
 	          echo ' <span class="meta-reply">';
 	            comments_popup_link(
 	              __('Leave a comment', 'cswd'),
@@ -245,7 +245,7 @@
 	              __('Read all comments', 'cswd')
 	             );
 	          echo '</span>';
-	        endif;
+	        endif; **/
 	      echo '</div>';
 	    endif;
 	  }
@@ -316,6 +316,9 @@
 
 	  wp_register_style('bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css', 'all');
       wp_enqueue_style('bootstrap-style');
+
+      wp_register_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', 'all');
+      wp_enqueue_style('font-awesome');
 
 		wp_register_script('jQuery', get_template_directory_uri() . '/js/jquery-2.1.4.min.js', array(), false, true);
     	wp_enqueue_script('jQuery');

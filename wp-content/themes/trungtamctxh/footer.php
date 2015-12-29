@@ -23,6 +23,13 @@
 		   if (footerTop < docHeight) {
 		    $('#footer').css('margin-top',  (docHeight - footerTop) + 'px');
 		   }
+
+		   $(".rpwe_widget").addClass("panel panel-primary");
+		   $(".rpwe_widget>.widgettitle").addClass("panel-heading");
+		   $(".rpwe_widget>.rpwe-block ").addClass("panel-body");
+		   $(".widget_text").addClass("btn btn-info btn-block");
+		   $(".widget_text:first").removeClass("btn-info").addClass("btn-warning");
+		   $(".widget_text>a>h3").append("<spand class='badge pull-right'><i class='fa fa-long-arrow-right'></i></spand>");
 		  });
 
 </script>
