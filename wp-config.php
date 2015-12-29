@@ -66,7 +66,8 @@ define('NONCE_SALT',       '5&mH{hGix|N 3e bE=uStO 8,d)Fl.)3qrrW_JhQ2ZEsx`;%^oS0
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix  = 'wp_';
-
+define('WP_HOME','http://localhost/ttctxh/wp-admin');
+define('WP_SITEURL','http://localhost/ttctxh/');
 /**
  * For developers: WordPress debugging mode.
  *
