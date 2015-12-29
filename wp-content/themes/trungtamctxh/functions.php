@@ -338,7 +338,8 @@
 		function top_news(){
 		query_posts('showposts=10');
 		if (have_posts()):
-			echo "<div><h3>TIN TỨC MỚI</h3>";
+			echo "<div class='news_content'><h3>TIN TỨC MỚI</h3>";
+			echo "<hr/>";
 		while (have_posts()) : the_post(); ?>
 			<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
 		<?php endwhile;
@@ -364,7 +365,8 @@
 				query_posts('cat='.$args['cat_id']);
 			}
 			if (have_posts()):
-			echo "<div><h3>".get_cat_name( $args['cat_id'] )."</h3>";
+			echo "<div class='news_content'><h3>".get_cat_name( $args['cat_id'] )."</h3>";
+			echo "<hr/>";
 			while (have_posts()) : the_post(); ?>
 				<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
 			<?php endwhile;
