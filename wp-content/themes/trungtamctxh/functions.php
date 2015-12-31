@@ -199,19 +199,23 @@
 	**/
 	if ( ! function_exists( 'cswd_entry_header' ) ) {
 	  function cswd_entry_header() {
-	    if ( is_single() ) : ?>
+	    if ( is_single()||is_page() ) : ?>
 	 
 	      <h2 class="entry-title">
 	        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 	          <?php the_title(); ?>
 	        </a>
 	      </h2>
+	      <?php printf( __('<i>Ngày đăng: %1$s</i>', 'cswd'),get_the_date() );?>
 	    <?php else : ?>
-	      <h3 class="entry-title">
-	        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-	          <?php the_title(); ?>
+	        <a href="<?php the_permalink(); ?>" class="list-group-item" rel="bookmark" title="<?php the_title_attribute(); ?>">
+	          <?php echo "<h4 class='item-title'>";?>
+	          <?php the_title();?>
+	          <?php echo "</h4>";?>
+	          <?php printf( __('<i class="chungaythang">Ngày đăng: %1$s</i>', 'cswd'),
+	          get_the_date() );?>
 	        </a>
-	      </h3><?php
+	      <?php
 	    endif;
 	  }
 	}
@@ -341,7 +345,8 @@
 			echo "<div class='news_content'><h3>TIN TỨC MỚI</h3>";
 			echo "<hr/>";
 		while (have_posts()) : the_post(); ?>
-			<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+			<a href="<?php the_permalink(); ?>"><h3 class="news-title"><?php the_title(); ?></h3></a>
+			<span class="the_excerpt"><?php the_excerpt();?></span>
 		<?php endwhile;
 		echo "</div>";
 		endif;
@@ -368,7 +373,8 @@
 			echo "<div class='news_content'><h3>".get_cat_name( $args['cat_id'] )."</h3>";
 			echo "<hr/>";
 			while (have_posts()) : the_post(); ?>
-				<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+				<a href="<?php the_permalink(); ?>"><h3 class="news-title"><?php the_title(); ?></h3></a>
+				<span class="the_excerpt"><?php the_excerpt();?></span>
 			<?php endwhile;
 				echo "</div>";
 			endif;

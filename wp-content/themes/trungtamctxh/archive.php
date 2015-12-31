@@ -8,10 +8,9 @@
                         bcn_display();
                     }?>
                 </div>
- 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+ 		     <?php if ( have_posts() ) : echo "<div class='list-group'>"; while ( have_posts() ) : the_post(); ?>
                 <?php get_template_part( 'content', get_post_format() ); ?>
-	        <?php endwhile; ?>
-	        <?php cswd_pagination(); ?>
+	        <?php endwhile; echo "</div>"; ?>
 	        <?php else : ?>
 	                <?php get_template_part( 'content', 'none' ); ?>
 	        <?php endif; ?>
