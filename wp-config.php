@@ -31,7 +31,7 @@ define('DB_USER', 'userttctxh');
 define('DB_PASSWORD', 'C5hu7t~9');
 
 /** MySQL hostname */
-define('DB_HOST', '112.78.3.7');
+define('DB_HOST', '192.168.1.22');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -66,7 +66,7 @@ define('NONCE_SALT',       '5&mH{hGix|N 3e bE=uStO 8,d)Fl.)3qrrW_JhQ2ZEsx`;%^oS0
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix  = 'wp_';
-define('WP_HOME','http://localhost/ttctxh/wp-admin');
+define('WP_HOME','http://localhost/ttctxh/');
 define('WP_SITEURL','http://localhost/ttctxh/');
 /**
  * For developers: WordPress debugging mode.

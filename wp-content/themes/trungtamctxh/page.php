@@ -2,9 +2,14 @@
 <div class="container">
  
         <section id="main-content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
- 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+                            <?php if(function_exists('bcn_display'))
+                            {
+                                bcn_display();
+                            }?>
+                </div>
+ 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php get_template_part( 'content', get_post_format() ); ?>
-                <?php get_template_part( 'author-bio' ); ?>
 	        <?php endwhile; ?>
 	        <?php else : ?>
 	                <?php get_template_part( 'content', 'none' ); ?>

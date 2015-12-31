@@ -201,17 +201,17 @@
 	  function cswd_entry_header() {
 	    if ( is_single() ) : ?>
 	 
-	      <h1 class="entry-title">
-	        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-	          <?php the_title(); ?>
-	        </a>
-	      </h1>
-	    <?php else : ?>
 	      <h2 class="entry-title">
 	        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 	          <?php the_title(); ?>
 	        </a>
-	      </h2><?php
+	      </h2>
+	    <?php else : ?>
+	      <h3 class="entry-title">
+	        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+	          <?php the_title(); ?>
+	        </a>
+	      </h3><?php
 	    endif;
 	  }
 	}
@@ -226,14 +226,14 @@
 	      echo '<div class="entry-meta">';
 	 
 	        // Hiển thị tên tác giả, tên category và ngày tháng đăng bài
-	        printf( __('<span class="author">Posted by %1$s</span>', 'cswd'),
-	          get_the_author() );
+	        /**printf( __('<span class="author">Posted by %1$s</span>', 'cswd'),
+	          get_the_author() );**/
 	 
-	        printf( __('<span class="date-published"> at %1$s</span>', 'cswd'),
+	        printf( __('<h4 class="date-published">Ngày đăng: %1$s</h4>', 'cswd'),
 	          get_the_date() );
 	 
-	        printf( __('<span class="category"> in %1$s</span>', 'cswd'),
-	          get_the_category_list( ', ' ) );
+	        /**printf( __('<span class="category"> in %1$s</span>', 'cswd'),
+	          get_the_category_list( ', ' ) );**/
 	 
 	        // Hiển thị số đếm lượt bình luận
 	        /**if ( comments_open() ) :

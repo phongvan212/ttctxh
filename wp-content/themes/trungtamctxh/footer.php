@@ -30,6 +30,10 @@
 		   $(".widget_text").addClass("btn btn-info btn-block");
 		   $(".widget_text:first").removeClass("btn-info").addClass("btn-warning");
 		   $(".widget_text>a>h3").append("<spand class='badge pull-right'><i class='fa fa-long-arrow-right'></i></spand>");
+		   $(".breadcrumbs").addClass("breadcrumb");
+		   $("input").addClass("form-control");
+		   $("textarea").addClass("form-control");
+		   $(".wpcf7-submit").addClass("btn btn-primary");
 		  });
 
 </script>
