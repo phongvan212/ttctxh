@@ -103,9 +103,7 @@ a{
     border-top: 1px solid #337ab7;
 }
 
-.news_content h4{
-    font-size: 17px;
-}
+
 
 .control-label {
     padding-top: 0px !important;
@@ -128,7 +126,43 @@ div.wpcf7-validation-errors {
 textarea{
     resize:none !important;
 }
+.news_content h4{
+    font-size: 17px;
+}
 
+.news-item{
+    margin-bottom: 32px;
+}
+.entry-title a:link, .entry-title a:active, .entry-title a:visited{
+    color: #0d0549;
+}
+.entry-title a:hover {
+    color: #414905;
+    opacity: 0.6;
+}
+a:visited {
+    opacity: 0.8;
+}
+.entry-title span {
+    color: #414905;
+}
+
+.entry-title-text{
+     font-family: "Times New Roman", Times, serif;
+
+}
+
+.posted-on{
+    font: 16px arial,helvetica,clean,sans-serif;
+    line-height: 1.231;
+}
+.entry-content{
+    font: 16px arial,helvetica,clean,sans-serif;
+    margin-top: 25.6px;
+}
+.read-more{
+    margin-top: 10px;
+}
 .chungaythang {
     font-size: small;
     margin-top: 0;
@@ -173,6 +207,12 @@ textarea{
     margin-bottom: 20px;
 }
 
-.carousel-caption{
-    background: rgba(0,0,0.2);
+.carousel-caption
+{
+    position: relative;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+   border-top: 0px !important;
 }

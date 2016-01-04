@@ -259,7 +259,7 @@
 	 * Thêm chữ Read More vào excerpt
 	 */
 	function cswd_readmore() {
-	  return '...<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'cswd') . '</a>';
+	  return '...<div class="read-more"><a href="'. get_permalink( get_the_ID() ) . '">' . __('Xem thêm <i class="fa fa-long-arrow-right"></i>', 'cswd') . '</a></div>';
 	}
 	add_filter( 'excerpt_more', 'cswd_readmore' );
 	 
@@ -345,8 +345,14 @@
 			echo "<div class='news_content'><h3>TIN TỨC MỚI</h3>";
 			echo "<hr/>";
 		while (have_posts()) : the_post(); ?>
-			<a href="<?php the_permalink(); ?>"><h3 class="news-title"><?php the_title(); ?></h3></a>
-			<span class="the_excerpt"><?php the_excerpt();?></span>
+			<div class="news-item">
+				<h2 class="h2 entry-title"><a href="<?php the_permalink(); ?>"><span class="entry-title-text"><?php the_title(); ?></span></a></h2>
+				<div class="posted-on"><span class="posted-on-string"><?php printf(__('Ngày đăng: %1$s', 'cswd'),get_the_date()." ".get_the_time());  ?></span></div>
+				<?php cswd_thumbnail('thumbnail');?>
+				<div class="entry-content clearfix">
+					<?php the_excerpt();?>
+				</div>
+			</div>
 		<?php endwhile;
 		echo "</div>";
 		endif;
@@ -373,8 +379,14 @@
 			echo "<div class='news_content'><h3>".get_cat_name( $args['cat_id'] )."</h3>";
 			echo "<hr/>";
 			while (have_posts()) : the_post(); ?>
-				<a href="<?php the_permalink(); ?>"><h3 class="news-title"><?php the_title(); ?></h3></a>
-				<span class="the_excerpt"><?php the_excerpt();?></span>
+				<div class="news-item">
+				<h2 class="h2 entry-title"><a href="<?php the_permalink(); ?>"><span class="entry-title-text"><?php the_title(); ?></span></a></h2>
+				<div class="posted-on"><span class="posted-on-string"><?php printf(__('Ngày đăng: %1$s', 'cswd'),get_the_date()." ".get_the_time());  ?></span></div>
+				<?php cswd_thumbnail('thumbnail');?>
+				<div class="entry-content clearfix">
+					<?php the_excerpt();?>
+				</div>
+			</div>
 			<?php endwhile;
 				echo "</div>";
 			endif;
