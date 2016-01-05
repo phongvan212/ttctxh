@@ -34,6 +34,8 @@
 		   $("input").addClass("form-control");
 		   $("textarea").addClass("form-control");
 		   $(".wpcf7-submit").addClass("btn btn-primary");
+		   $("img").addClass("img-responsive");
+		   $("table").addClass("table");
 		  });
 
 </script>
